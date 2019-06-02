@@ -1,0 +1,81 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2019-06-02T09:57:13.924Z",
+    "end": "2019-06-02T09:57:15.940Z",
+    "duration": 2016,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "df86d5b0-3f92-439d-ad09-201941dbdbb0",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "63ede915-80dc-48c0-abdb-a287900ce38b",
+        "title": "node接口测试",
+        "fullFile": "/Users/macdzw/Desktop/京城一灯学习笔记/Javascript与QA工程师/DZW-TEST/service/router.spec.js",
+        "file": "/service/router.spec.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "test接口测试",
+            "fullTitle": "node接口测试 test接口测试",
+            "timedOut": true,
+            "duration": 2004,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "axios.get(\"http://localhost:3000/test\").then(function(response){\n    if(response.data.result == \"Hello World!\"){\n        done();\n    }else {\n        done(new Error(\"数据\"))\n    }\n}).catch(function(error){\n     console.log(error);\n})",
+            "err": {
+              "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/Users/macdzw/Desktop/京城一灯学习笔记/Javascript与QA工程师/DZW-TEST/service/router.spec.js)",
+              "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/Users/macdzw/Desktop/京城一灯学习笔记/Javascript与QA工程师/DZW-TEST/service/router.spec.js)\n    at Test.Runnable._timeoutError (node_modules/_mocha@6.1.4@mocha/lib/runnable.js:455:10)\n    at Timeout.<anonymous> (node_modules/_mocha@6.1.4@mocha/lib/runnable.js:266:24)"
+            },
+            "isRoot": false,
+            "uuid": "05de331f-f636-47fd-bdb0-d3ca4b72435d",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "05de331f-f636-47fd-bdb0-d3ca4b72435d"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 2004,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}

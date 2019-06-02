@@ -1,0 +1,34 @@
+{
+  "name": "yd-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm-run-all --parallel unit e2e ui service",
+    "unit": "karma start",
+    "preprod": "echo 11",
+    "prod": "echo 22",
+    "e2e": "node ./e2e/*.spec.js",
+    "ui": "backstop test",
+    "service": "node ./mochaRunner.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "backstopjs": "^4.0.6",
+    "express": "^4.17.0",
+    "jasmine-core": "^3.4.0",
+    "karma": "^4.1.0",
+    "karma-coverage": "^1.1.2",
+    "karma-jasmine": "^2.0.1",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "mocha": "^6.1.4",
+    "mochawesome": "^3.1.2",
+    "npm-run-all": "^4.1.5",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  },
+  "dependencies": {
+    "phantom": "^6.2.0"
+  }
+}
